@@ -1,7 +1,12 @@
 package readability;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.print("Hello world!");
+        Scanner scanner = new Scanner(System.in);
+        String text = scanner.nextLine();
+        int length = text.length();
+        System.out.print(length <= 100 ? "EASY" : "HARD");
     }
 }
